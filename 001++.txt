@@ -1,0 +1,126 @@
+(001)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout << "Введите число: ";
+	cin >> n;
+	int kv = n * n;
+	int cu = n * n * n;
+	cout << "Квадрат числа: " << kv << endl;
+	cout << "Куб числа: " << cu << endl;
+	return 0;
+}
+
+------------------------------------------------------------------------
+
+(002)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n1, n2;
+	cout << "Введите 1е число: ";
+	cin >> n1;
+	cout << "Введите 1е число: ";
+	cin >> n2;
+	double sr = (n1 + n2) / 2;
+	cout << "Среднее арифметическое: " << sr << endl;
+}
+
+----------------------------------------------------------------------------
+
+(003)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int s, e;
+	int t = 0;
+
+	cout << "Введите начало диапазона: ";
+	cin >> s;
+	cout << "Введите конец диапазона: ";
+	cin >> e;
+	for (int w = s; w <= e; w++)
+	{
+		if (w % 2 == 0)
+		{
+			t += 1;
+		}
+	}
+	cout << "Сумма четных чисел: " << t << endl;
+	return 0;
+}
+
+----------------------------------------------------------------------------
+
+(004)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int t = 0;
+	for (int s = 1; s <= 150; s++)
+	{
+		if (s % 5 == 0 || s % 7 == 0)
+		{
+			t += 1;
+
+		}
+	}
+	cout << "Сумма чисел кратных 5 или 7: " << t << endl;
+	return 0;
+}
+
+--------------------------------------------------------------------------------
+
+(005)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n1 = 0, n2 = 1;
+	cout << "Первые 10 чисел Фибоначчи: ";
+
+	for (int s = 1; s <= 10; s++)
+	{
+		{
+			cout << n1 << " ";
+			int n = n1 + n2;
+			n1 = n2;
+			n2 = n;
+		}
+	}
+	cout << endl;
+	return 0;
+}
+
+----------------------------------------------------------------------------------
+
+(006)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout << "Введите число: ";
+	cin >> n;
+	cout << "Делители числа " << n << " ";
+	for (int s = 1; s <= n; s++)
+	{
+		if (n % s == 0)
+		{
+			cout << s << " ";
+		}
+	}
+	cout << endl;
+	return 0;
+}
